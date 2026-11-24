@@ -1,0 +1,45 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORT — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORT MUST NEVER BE DELETED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss';
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+/* Riftori's own buyer app: a quiet browser frame, so each shop's brand is the loud colour inside it.
+   The agent speaks in ink; money is green. */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+
+  --color-accent: #1d5c47;
+  --color-accent-ink: #164a39;
+  --color-accent-soft: #e4efe9;
+  --color-canvas: #f4f3ef;
+  --color-surface: #ffffff;
+  --color-ink: #1b1d1c;
+  --color-muted: #5f6561;
+  --color-faint: #8f9590;
+  --color-line: #e6e4df;
+  --color-warn: #9a5b0f;
+  --color-warn-soft: #fbf0dc;
+  --color-agent: #1b1d1c;
+  --color-agent-soft: #ecebe6;
+
+  /* Shared with every storefront, so the agent chat and checkout draw in both */
+  --color-paper: #f4f3ef;
+  --color-card: #ffffff;
+  --color-brand: #1d5c47;
+  --color-brand-ink: #164a39;
+  --color-brand-soft: #e4efe9;
+  --color-ok: #2f7a4f;
+  --color-ok-soft: #e3f1e8;
+}
+
+html,
+body,
+#root {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}

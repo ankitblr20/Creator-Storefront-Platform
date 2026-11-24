@@ -1,0 +1,41 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORT — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORT MUST NEVER BE DELETED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss';
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+/* Riftori internal admin: dense, neutral, built for reading numbers and resolving tickets fast. */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-accent: #1d5c47;
+  --color-accent-ink: #164a39;
+  --color-accent-soft: #e4efe9;
+  --color-canvas: #f4f4f2;
+  --color-surface: #ffffff;
+  --color-ink: #17191a;
+  --color-muted: #5c6360;
+  --color-faint: #8d938f;
+  --color-line: #e4e3df;
+  --color-rail: #141716;
+  --color-rail-line: #2a2e2c;
+
+  --color-warn: #9a5b0f;
+  --color-warn-soft: #fbf0dc;
+  --color-danger: #b42318;
+  --color-danger-soft: #fdecea;
+  --color-info: #2b5fb4;
+  --color-info-soft: #e8effb;
+}
+
+html,
+body,
+#root {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+}
